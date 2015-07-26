@@ -123,9 +123,9 @@ var TypeaheadTokenizer = React.createClass({
 
   _onKeyDown: function(event) {
     // We only care about intercepting backspaces
-    if (event.keyCode === KeyEvent.DOM_VK_BACK_SPACE) {
+    /*if (event.keyCode === KeyEvent.DOM_VK_BACK_SPACE) {
       return this._handleBackspace(event);
-    }
+    }*/
     this.props.onKeyDown(event);
   },
 
