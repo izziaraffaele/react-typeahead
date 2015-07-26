@@ -279,7 +279,9 @@ var Typeahead = React.createClass({
 
   componentWillReceiveProps: function(nextProps) {
     this.setState({
-      visible: this.getOptionsForValue(this.state.entryValue, nextProps.options)
+      visible: this.getOptionsForValue(this.state.entryValue, nextProps.options),
+       // This should be called something else, "entryValue"
+      entryValue: nextProps.props.value || nextProps.props.defaultValue,
     });
   },
 
